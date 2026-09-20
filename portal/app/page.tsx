@@ -1,3 +1,11 @@
+const contacts = [
+  { name: 'Дамир Байжуминов', phone: '+7 966 36 888 68', tel: '+79663688868', tg: 'Damir_bai', email: 'Damir.baizhuminov@yandex.ru', photo: '1.jpg', max: false },
+  { name: 'Азиз Султанов', phone: '+7 902 817 00 83', tel: '+79028170083', tg: 'aziweb', email: 'bwwwoy@gmail.com', photo: '2.png', max: false },
+  { name: 'Ильхом Султанов', phone: '+7 909 712 14 56', tel: '+79097121456', tg: 'ilhom_upgrade', email: '', photo: '3.jpg', max: false },
+  { name: '@itsvoytin', phone: '+7 919 861 76 16', tel: '+79198617616', tg: 'itsvoytin', email: '', photo: '4.jpg', max: true },
+  { name: '@drobovikaa', phone: '+7 916 615 10 18', tel: '+79166151018', tg: 'drobovikaa', email: 'vikalevshina@yandex.ru', photo: '5.jpg', max: false },
+];
+
 const routes = [
   { number: '01', title: 'Разобраться с задачей', description: 'Найдите готовый кейс, адаптируйте промпт и получите проверяемый черновик.', href: '/cases/', action: 'Открыть библиотеку кейсов' },
   { number: '02', title: 'Собрать рабочий способ', description: 'Используйте тетрадь: как сформулировать запрос, защитить данные и закрепить результат.', href: '/workbook.html', action: 'Открыть рабочую тетрадь' },
@@ -18,7 +26,7 @@ export default function Home() {
     <div className="shell">
       <nav className="top-nav" aria-label="Разделы портала">
         <a className="brand" href="/">ИИ × АПК</a>
-        <div className="nav-links"><a href="/cases/">Кейсы</a><a href="/knowledge">Знания</a><a href="/implementation">Внедрение</a><a href="/downloads/Методичка_Внедрение_ИИ_на_производстве_финальная.docx" download>Методичка</a></div>
+        <div className="nav-links"><a href="/cases/">Кейсы</a><a href="/knowledge">Знания</a><a href="#contacts">Контакты</a><a href="/implementation">Внедрение</a><a href="/downloads/Методичка_Внедрение_ИИ_на_производстве_финальная.docx" download>Методичка</a></div>
       </nav>
       <header className="hero">
         <div>
@@ -46,6 +54,13 @@ export default function Home() {
         </div>
       </section>
       <section className="next-step" aria-labelledby="next-title"><div><p className="kicker">Следующий шаг</p><h2 id="next-title">Одна задача. Один владелец. Один измеримый результат.</h2></div><a className="button primary" href="/implementation">Собрать паспорт пилота</a></section>
+      <section className="section contacts-section" id="contacts" aria-labelledby="contacts-title">
+        <div className="section-head"><p className="kicker">На связи</p><h2 id="contacts-title">Контакты</h2></div>
+        <div className="contacts-grid">{contacts.map((person) => <article className="contact-card" key={person.tg}>
+          <img className="contact-photo" src={'/contacts/' + person.photo} alt={person.name} loading="lazy" width="480" height="540" />
+          <div className="contact-info"><h3>{person.name}</h3><a href={'tel:' + person.tel}>{person.phone}</a><a href={'https://t.me/' + person.tg} target="_blank" rel="noopener noreferrer">Telegram · @{person.tg}</a>{person.email && <a href={'mailto:' + person.email}>{person.email}</a>}{person.max && <span className="contact-max">MAX · {person.phone}</span>}</div>
+        </article>)}</div>
+      </section>
       <footer className="footer"><span>Портал ИИ × АПК</span><span>Прототип для согласования</span></footer>
     </div>
   </main>;
