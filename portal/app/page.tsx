@@ -2,8 +2,8 @@ const contacts = [
   { name: 'Дамир Байжуминов', phone: '+7 966 36 888 68', tel: '+79663688868', tg: 'Damir_bai', email: 'Damir.baizhuminov@yandex.ru', photo: '1.jpg', max: false },
   { name: 'Азиз Султанов', phone: '+7 902 817 00 83', tel: '+79028170083', tg: 'aziweb', email: 'bwwwoy@gmail.com', photo: '2.png', max: false },
   { name: 'Ильхом Султанов', phone: '+7 909 712 14 56', tel: '+79097121456', tg: 'ilhom_upgrade', email: '', photo: '3.jpg', max: false },
-  { name: '@itsvoytin', phone: '+7 919 861 76 16', tel: '+79198617616', tg: 'itsvoytin', email: '', photo: '4.jpg', max: true },
-  { name: '@drobovikaa', phone: '+7 916 615 10 18', tel: '+79166151018', tg: 'drobovikaa', email: 'vikalevshina@yandex.ru', photo: '5.jpg', max: false },
+  { name: 'Алексей Войтин', phone: '+7 919 861 76 16', tel: '+79198617616', tg: 'itsvoytin', email: '', photo: '4.jpg', max: true },
+  { name: 'Виктория Левшина', phone: '+7 916 615 10 18', tel: '+79166151018', tg: 'drobovikaa', email: 'vikalevshina@yandex.ru', photo: '5.jpg', max: false },
 ];
 
 const routes = [
