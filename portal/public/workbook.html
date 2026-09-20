@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Живая практическая памятка об ИИ для руководителей АПК.">
+  <title>Рабочая тетрадь по ИИ — АПК</title>
+  <style>
+    :root{--bg:#f6f7f3;--ink:#1f2a25;--soft:#edf0e8;--line:#cfd7cb;--green:#2f6547;--gold:#bd913c}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Arial,Helvetica,sans-serif}.stripe{height:12px;background:repeating-linear-gradient(135deg,var(--green) 0 14px,var(--gold) 14px 17px,var(--green) 17px 31px)}main{max-width:1150px;margin:auto;padding:48px 32px 80px}header{display:grid;grid-template-columns:1.35fr .8fr;gap:72px;border-bottom:1px solid var(--line);padding-bottom:42px}.eyebrow{margin:0;color:#667269;font-size:14px}h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400}h1{max-width:12ch;margin:14px 0 20px;font-size:clamp(3rem,7vw,6.2rem);line-height:.96;letter-spacing:-.055em}.lead{max-width:650px;margin:0;font-size:19px;line-height:1.7;color:#425047}.checklist{align-self:end;border-left:4px solid var(--gold);padding-left:20px}.checklist p{margin:0 0 18px;font-size:15px}.checklist b{color:var(--ink)}nav{display:flex;gap:8px;overflow:auto;margin:32px 0 0;border-bottom:1px solid var(--line)}nav button{flex:none;border:0;border-bottom:2px solid transparent;background:transparent;color:#5b6960;padding:12px 10px;cursor:pointer;font-size:14px}nav button:hover,nav button[aria-selected=true]{color:var(--green);border-bottom-color:var(--green)}.panel{padding-top:40px}.panel[hidden]{display:none}h2{margin:0 0 10px;font-size:35px;line-height:1.15;letter-spacing:-.025em}.copy{max-width:760px;margin:0;color:#4b584f}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin:34px 0 46px}.step{border-top:2px solid var(--green);padding-top:12px}.step h3{margin:0;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:600}.step p{margin:4px 0 0;color:#59665e;font-size:14px}table{width:100%;border-collapse:collapse;margin-top:32px;font-size:15px}th,td{border-top:1px solid var(--line);padding:15px 18px;text-align:left;vertical-align:top}thead th{border-top:2px solid var(--green)}pre{overflow:auto;margin:32px 0 0;border-left:3px solid var(--gold);background:var(--soft);padding:20px;font:14px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap}.note{margin-top:32px;border-left:4px solid var(--gold);background:var(--soft);padding:20px}.note small{color:#647068}.two{grid-template-columns:repeat(2,1fr)}ol{max-width:760px;color:#4b584f;padding-left:22px}li{margin:10px 0}footer{display:grid;grid-template-columns:auto 1fr;gap:20px;margin-top:72px;border-top:1px solid var(--line);padding-top:30px}footer h2{font-size:27px}footer p{max-width:650px;margin:8px 0 0;color:#59665e}.mark{color:var(--green);font-size:30px}@media(max-width:720px){main{padding:32px 20px 60px}header{grid-template-columns:1fr;gap:36px}.steps,.two{grid-template-columns:1fr}h1{font-size:56px}table{min-width:620px}.table-wrap{overflow:auto}footer{grid-template-columns:1fr;gap:4px}}
+  </style>
+</head>
+<body>
+  <div class="stripe"></div>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">Для руководителей АПК</p>
+        <h1>Рабочая тетрадь по ИИ</h1>
+        <p class="lead">Как быстрее разбирать отчёты, готовить презентации и сохранять контроль над данными и решениями.</p>
+      </div>
+      <aside class="checklist"><p><b>Перед каждым запросом</b></p><p><b>Вход</b><br>Эти данные разрешено передавать в сервис?</p><p><b>Доказательство</b><br>Важный ответ можно сверить с источником?</p><p><b>Действие</b><br>Кто проверит результат перед использованием?</p></aside>
+    </header>
+
+    <nav role="tablist" aria-label="Разделы методички">
+      <button role="tab" aria-selected="true" aria-controls="start" data-tab="start">Начать</button><button role="tab" aria-selected="false" aria-controls="prompt" data-tab="prompt">Собрать запрос</button><button role="tab" aria-selected="false" aria-controls="data" data-tab="data">Защитить данные</button><button role="tab" aria-selected="false" aria-controls="access" data-tab="access">Личный доступ</button><button role="tab" aria-selected="false" aria-controls="contour" data-tab="contour">Выбрать контур</button><button role="tab" aria-selected="false" aria-controls="habits" data-tab="habits">Рабочий порядок</button>
+    </nav>
+
+    <section class="panel" id="start" role="tabpanel"><h2>Начните с одной повторяющейся задачи</h2><p class="copy">Не внедряйте ИИ «вообще». Выберите понятную работу, где черновик проверяет сотрудник, а эффект можно измерить.</p><div class="steps"><div class="step"><h3>Выбрать задачу</h3><p>Например, еженедельная сводка по производству.</p></div><div class="step"><h3>Провести пилот</h3><p>Начать с открытых или согласованных данных.</p></div><div class="step"><h3>Закрепить способ</h3><p>Сохранить шаблон промта и правило проверки.</p></div></div><div class="table-wrap"><table><thead><tr><th>Ситуация</th><th>Первый разумный шаг</th></tr></thead><tbody><tr><td>Нужен черновик текста или структура презентации</td><td>Использовать универсальный ИИ на открытых или разрешённых данных</td></tr><tr><td>Отчёты и презентации находятся в Microsoft 365</td><td>Проверить корпоративный Copilot в привычном рабочем контуре</td></tr><tr><td>Данные нельзя передавать наружу</td><td>Использовать обезличенную выборку или согласовать внутренний контур</td></tr></tbody></table></div></section>
+
+    <section class="panel" id="prompt" role="tabpanel" hidden><h2>Соберите запрос как понятное задание</h2><p class="copy">Хороший промт не обязан быть изобретательным. Он должен дать ИИ ровно тот контекст, который нужен для проверяемого результата.</p><div class="steps two"><div class="step"><h3>Роль и задача</h3><p>Кто ИИ и что именно нужно сделать.</p></div><div class="step"><h3>Контекст</h3><p>Для кого результат и какое решение он поддерживает.</p></div><div class="step"><h3>Данные и ограничения</h3><p>Разрешённые факты, объём, тон и запреты.</p></div><div class="step"><h3>Формат и проверка</h3><p>Как оформить ответ и что отделить от предположений.</p></div></div><pre>Ты — аналитик агропромышленной компании.
+Задача: подготовь черновик выводов по производственному отчёту.
+Контекст: выводы нужны для еженедельного совещания руководителей.
+Исходные данные: [разрешённая выборка].
+Ограничения: не придумывай факты и причины.
+Формат: 5 изменений, 3 гипотезы, вопросы подразделениям, 3 слайда.
+Проверка: отдельно отметь факты и предположения, покажи расчёты.</pre></section>
+
+    <section class="panel" id="data" role="tabpanel" hidden><h2>Данные должны жить не в чате</h2><p class="copy">Чат — временный рабочий стол. Источник правды — корпоративная система или личная папка с резервной копией, если речь только о личных данных.</p><div class="table-wrap"><table><thead><tr><th>Оставляем вне чата</th><th>Передаём в ИИ только при разрешении</th></tr></thead><tbody><tr><td>Исходные отчёты, договоры, утверждённые презентации</td><td>Минимальную выборку, необходимую для одной конкретной задачи</td></tr><tr><td>Полные коммерческие данные и персональные сведения</td><td>Открытые источники, шаблоны и обезличенные агрегаты</td></tr><tr><td>Финальный результат — в корпоративной папке или СЭД</td><td>Черновик формулировки, который затем проверяет сотрудник</td></tr></tbody></table></div><div class="note"><small>Важно помнить</small><div>«Не обучать модель», «не показывать чат в истории» и «обрабатывать данные локально» — три разные настройки и три разных риска.</div></div></section>
+
+    <section class="panel" id="access" role="tabpanel" hidden><h2>Личный доступ к ИИ</h2><p class="copy">Для личной работы используйте сервисы, официально доступные в вашей стране и на вашем тарифе. Не стройте рабочий процесс вокруг неофициального посредника: он может оказаться недоступным, небезопасным или привести к блокировке учётной записи.</p><div class="steps two"><div class="step"><h3>Проверить доступность</h3><p>Сверьте страну, условия использования и способ оплаты на сайте самого сервиса.</p></div><div class="step"><h3>Защитить учётную запись</h3><p>Уникальный пароль, двухфакторная аутентификация и отдельная почта для важных сервисов.</p></div></div><h2 style="font-size:27px">Если нужный сервис недоступен</h2><ol><li>Выберите альтернативный ИИ, который официально работает в вашей стране.</li><li>Для базовых задач попробуйте локальную модель на своём устройстве.</li><li>Храните важные промты и результаты вне чата — в заметках или документах с резервной копией.</li><li>Не передавайте логины, коды двухфакторной аутентификации, банковские данные и личные документы третьим лицам.</li></ol></section>
+
+    <section class="panel" id="contour" role="tabpanel" hidden><h2>Выберите место, где работает ИИ</h2><div class="table-wrap"><table><thead><tr><th></th><th>На ноутбуке</th><th>Во внутреннем контуре</th></tr></thead><tbody><tr><th>Где работает</th><td>На одном устройстве сотрудника</td><td>На корпоративном сервере или в изолированной среде</td></tr><tr><th>Для чего подходит</th><td>Обучение и ограниченный пилот на разрешённых данных</td><td>Регулярная работа команды с внутренними документами</td></tr><tr><th>Что контролировать</th><td>Историю, файлы, резервные копии и синхронизацию</td><td>Права доступа, источники, сроки хранения и журнал обращений</td></tr></tbody></table></div><div class="steps two"><div class="step"><h3>Учётная запись сотрудника</h3><p>ИИ получает те же ограничения доступа, что и человек.</p></div><div class="step"><h3>Разрешённые источники</h3><p>В ответе должны быть ссылки на использованные документы и расчёты.</p></div></div></section>
+
+    <section class="panel" id="habits" role="tabpanel" hidden><h2>Две привычки, которые сохраняют результат</h2><div class="steps two"><div class="step"><h3>Если разговор ушёл в сторону</h3><p>Откройте новый чат с коротким брифом, а не продолжайте бесконечную ветку.</p></div><div class="step"><h3>Если ответ оказался ценным</h3><p>Сохраните решение, ссылки и готовый промт вне чата — в документ или заметку.</p></div></div><pre>Сделай карточку для сохранения вне чата:
+цель, главные выводы, решения, готовые промты,
+важные ссылки и следующий шаг. Не добавляй новых фактов.</pre></section>
+
+    <footer><div class="mark">✦</div><div><h2>Памятка обновляется</h2><p>Присылайте организатору вопросы, которые возникают в работе. Новые ответы, примеры и готовые промты будут появляться на этой же странице.</p></div></footer>
+  </main>
+  <script>
+    document.querySelectorAll('[data-tab]').forEach(button => button.addEventListener('click', () => {
+      const id = button.dataset.tab;
+      document.querySelectorAll('[role=tab]').forEach(tab => tab.setAttribute('aria-selected', String(tab === button)));
+      document.querySelectorAll('[role=tabpanel]').forEach(panel => panel.hidden = panel.id !== id);
+    }));
+  </script>
+</body>
+</html>
